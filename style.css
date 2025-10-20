@@ -1,0 +1,52 @@
+/* styles.css */
+/* --- Base --- */
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+  --bg: #f5f0e6;
+  --text: #333;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 40px;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings */
+h1{
+  font-family: 'Coda', sans-serif;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+/* Paragraphs */
+p{
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* Images */
+img{
+  display: block;
+  margin: 20px auto;
+}
+
+/* Navigation */
+nav{
+  margin-top: 30px;
+}
+nav a{
+  text-decoration: none;
+  color: var(--text);
+  margin: 0 15px;
+  font-weight: 600;
+}
+nav a:hover{
+  text-decoration: underline;
+}
