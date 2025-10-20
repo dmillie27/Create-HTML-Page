@@ -10,9 +10,14 @@
 *{ box-sizing: border-box; }
 
 body{
-  margin: 40px;
-  background: var(--bg);
-  color: var(--text);
+  margin: 0;                 /* removes big side gaps */
+  height: 100vh;             /* fills the screen vertically */
+  display: flex;             /* centers content */
+  flex-direction: column;
+  justify-content: center;   /* centers up/down */
+  align-items: center;       /* centers left/right */
+  background-color: #f5e6cc; /* <-- replace with the exact color from your image */
+  color: #333;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
