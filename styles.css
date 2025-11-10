@@ -1,54 +1,132 @@
 /* styles.css */
+
 /* --- Base --- */
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&family=Montserrat:wght@400;600&display=swap');
 
-:root{
+:root {
   --bg: #f9f1e3;
   --text: #333;
 }
 
-*{ box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body{
+body {
   margin: 0;
-  min-height: 100dvh;   /* was height:100vh */
-  /* remove flex centering from body */
-  background-color: #f9f1e3;
-  color: #333;
+  min-height: 100dvh;   /* full height but flexible */
+  background-color: var(--bg);
+  color: var(--text);
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Headings */
-h1{
+h1 {
   font-family: 'Coda', sans-serif;
   font-weight: 800;
   margin: 0 0 20px;
 }
 
 /* Paragraphs */
-p{
+p {
   max-width: 600px;
   margin: 20px auto;
   line-height: 1.6;
 }
 
 /* Images */
-img{
+img {
   display: block;
   margin: 20px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navigation */
-nav{
+nav {
   margin-top: 30px;
 }
-nav a{
+
+nav a {
   text-decoration: none;
   color: var(--text);
   margin: 0 15px;
   font-weight: 600;
 }
-nav a:hover{
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Contact Page --- */
+.container {
+  width: 90%;
+  max-width: 420px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: 'Coda', sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #bfa77a;
+  box-shadow: 0 0 4px rgba(191, 167, 122, 0.5);
+}
+
+button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #bfa77a; /* warm gold accent */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #a89167;
+}
+
+.container a {
+  color: #bfa77a;
+  text-decoration: none;
+}
+
+.container a:hover {
   text-decoration: underline;
 }
